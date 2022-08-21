@@ -1,0 +1,46 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function pattern1(n){
+  for(var row=1; row <= n; row++){
+    for(var col=1; col <= row; col++){
+      document.write('*');
+    }
+    document.write('<br/>');
+  }
+}
+
+function pattern2(n){
+  for(var row=1; row <= n; row++){
+    for(var col=1; col <= n; col++){
+      document.write('*');
+    }
+    document.write('<br/>');
+  }
+}
+
+
+function pattern3(n){
+  for(var row=n; row >= 1; row--){
+    for(var col=1; col <= row; col++){
+      document.write('*');
+    }
+    document.write('<br/>');
+  }
+}
+
+
+pattern1(4)
+document.write('<br/>');
+document.write('<br/>');
+pattern2(4)
+document.write('<br/>');
+document.write('<br/>');
+pattern3(4)
+
+</script>
+</head>
+<body>
+</body>
+</html>
